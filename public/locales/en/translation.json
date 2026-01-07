@@ -1,5 +1,6 @@
 {
-  "home": "Home",
+
+"nav":{  "home": "Home",
   "about": "About",
   "experience": "Experience",
   "skills": "Skills",
@@ -7,4 +8,21 @@
   "contact": "Contact",
   "hero_title": "Luis Senra Mirabal",
   "hero_subtitle": "Software Engineer"
-}
+},
+
+"skills": {
+    "title": "Skills",
+    "subtitle": "Technical Expertise",
+    "expert": "Expert",
+    "advanced": "Advanced"
+  },
+
+ "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk about your next project",
+    "name": "Full Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  } 
+}  

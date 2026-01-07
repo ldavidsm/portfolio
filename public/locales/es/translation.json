@@ -1,4 +1,5 @@
 {
+"nav": {
   "home": "Inicio",
   "about": "Sobre mí",
   "experience": "Experiencia",
@@ -7,4 +8,22 @@
   "contact": "Contacto",
   "hero_title": "Luis Senra Mirabal",
   "hero_subtitle": "Ingeniero de Software"
+},
+
+
+"skills": {
+    "title": "Habilidades",
+    "subtitle": "Especialización Técnica",
+    "expert": "Experto",
+    "advanced": "Avanzado"
+  },
+
+"contact": {
+    "title": "Contacto",
+    "subtitle": "¿Hablamos de tu próximo proyecto?",
+    "name": "Nombre completo",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje"
+  }
 }
