@@ -4,6 +4,12 @@ import About from './components/about';
 import Skills from './components/skills';
 import Education from './components/education';
 import Contact from './components/contact';
+import Experience from './components/experience';
+
+export const metadata = {
+  title: "Tu Nombre | Portfolio",
+  description: "Frontend Developer Portfolio",
+};
 
 export default function Home() {
   return (
@@ -21,18 +27,24 @@ export default function Home() {
           <About />
         </section>
 
+        {/* Education */}
+        <section id="education">
+          <Education />
+        </section>
+
+        {/* Experience */}
+        <section id="experience">
+          <Experience />
+        </section>
+
         {/* Skills */}
         <section id="skills">
           <Skills />
         </section>
 
-        {/* Education */}
-        <section id="education">
-          <Education />
-        </section>
-        {/* Contact  */}
+        {/* Contact */}
         <section id="contact">
-          <Contact/>
+          <Contact />
         </section>
       </main>
     </>
