@@ -3,7 +3,7 @@ import ClientWrapper from "./components/ClientWrapper";
 import React from "react"; 
 
 export const metadata = {
-  title: "Luis Senra Mirabal | Portfolio",
+  title: "Luis Senra Mirabal | Software Engineer",
   description: "Software Engineer Portfolio",
 };
 
