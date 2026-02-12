@@ -1,4 +1,8 @@
+"use client";
+import { useTranslation } from "react-i18next";
+
 export default function Skills() {
+  const { t } = useTranslation();
   const skills = [
     { name: "PostgreSQL", level: 80, color: "#512bd4" },
     { name: "Python", level: 80, color: "#239120" },
@@ -12,23 +16,24 @@ export default function Skills() {
     <section id="skills" className="w-full bg-[#0a0a0a] py-20 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-black mb-16 uppercase tracking-tighter flex items-center gap-4">
-          <span className="text-amber-500">05.</span> Habilidades
+          <span className="text-amber-500">05.</span> {t("skills.title")}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          
+
           {/* Columna Izquierda: Descripción Narrativa */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-amber-500 font-mono">
-              Especialización Técnica
+              {t("skills.subtitle")}
             </h3>
             <p className="text-gray-400 leading-relaxed text-lg">
-              Desarrollo soluciones web full-stack de alto rendimiento con FastAPI (Python) para backends escalables, PostgreSQL para gestión robusta de datos, y React en el frontend para interfaces dinámicas y reactivas.
+              {t("skills.description")}
             </p>
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 italic text-gray-400">
-"Conecto lógica de negocio ágil con experiencias de usuario fluidas, desde la base de datos hasta la interfaz."            </div>
+              "{t("skills.quote")}"
+            </div>
             <p className="text-gray-400">
-              Arquitecturas API-first, optimización de consultas en bases de datos relacionales, y aplicaciones React mantenibles y eficientes.
+              {t("skills.highlight")}
             </p>
           </div>
 
@@ -39,19 +44,19 @@ export default function Skills() {
                 <div className="flex justify-between items-end mb-2">
                   <div>
                     <span className="text-sm font-mono text-amber-500/70 block mb-1">
-                      {skill.level >= 90 ? "Expert" : "Advanced"}
+                      {skill.level >= 90 ? t("skills.expert") : t("skills.advanced")}
                     </span>
                     <h4 className="font-bold text-lg tracking-wide">{skill.name}</h4>
                   </div>
                   <span className="text-amber-500 font-mono font-bold">{skill.level}%</span>
                 </div>
-                
+
                 {/* Barra de Progreso Estilizada */}
                 <div className="w-full bg-white/5 rounded-full h-3 border border-white/10 overflow-hidden p-[2px]">
                   <div
                     className="h-full rounded-full transition-all duration-1000 ease-out relative shadow-[0_0_10px_rgba(245,158,11,0.3)]"
-                    style={{ 
-                      width: `${skill.level}%`, 
+                    style={{
+                      width: `${skill.level}%`,
                       backgroundColor: skill.color,
                       boxShadow: `0 0 15px ${skill.color}50`
                     }}

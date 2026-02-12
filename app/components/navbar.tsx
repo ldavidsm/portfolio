@@ -18,12 +18,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: t("home"), href: "#home" },
-    { name: t("about"), href: "#about" },
-    { name: t("education"), href: "#education" },
-    { name: t("experience"), href: "#experience" },
-    { name: t("skills"), href: "#skills" },
-    { name: t("contact"), href: "#contact" },
+    { name: t("nav.home"), href: "#home" },
+    { name: t("nav.about"), href: "#about" },
+    { name: t("nav.education"), href: "#education" },
+    { name: t("nav.experience"), href: "#experience" },
+    { name: t("nav.skills"), href: "#skills" },
+    { name: t("nav.contact"), href: "#contact" },
   ];
 
   return (

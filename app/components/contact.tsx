@@ -1,33 +1,36 @@
+import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="w-full bg-[#0a0a0a] py-20 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-black mb-16 uppercase tracking-tighter flex items-center gap-4">
-          <span className="text-amber-500">04.</span> Contacto
+          <span className="text-amber-500">04.</span> {t('contact.title')}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Columna Izquierda: Información */}
           <div className="flex flex-col justify-between">
             <div>
-              <h3 className="text-3xl font-bold mb-6 italic">¿Hablamos de tu próximo proyecto?</h3>
+              <h3 className="text-3xl font-bold mb-6 italic">{t('contact.subtitle')}</h3>
               <p className="text-gray-400 text-lg mb-10 max-w-md">
-                Estoy disponible para nuevos retos y colaboraciones en el área de desarrollo y datos.
+                {t('contact.description')}
               </p>
-              
+
               <div className="space-y-6">
-                <ContactDetail icon={<FaEnvelope />} title="Email" content="lsenramirabal@gmail.com" />
-                <ContactDetail icon={<FaPhoneAlt />} title="Teléfono" content="+34 623 96 23 41" />
-                <ContactDetail icon={<FaMapMarkerAlt />} title="Ubicación" content="Madrid, España" />
+                <ContactDetail icon={<FaEnvelope />} title={t('contact.details.email')} content="lsenramirabal@gmail.com" />
+                <ContactDetail icon={<FaPhoneAlt />} title={t('contact.details.phone')} content="+34 623 96 23 41" />
+                <ContactDetail icon={<FaMapMarkerAlt />} title={t('contact.details.location')} content={t('contact.details.mylocation')} />
               </div>
             </div>
 
             {/* RRSS Rediseñadas para el pie */}
             <div className="flex gap-4 mt-12">
-              <a href="https://github.com/ldavidsm" target = "_blank" className="p-4 rounded-xl bg-white/5 border border-white/10 text-white hover:text-amber-500 transition-all"><FaGithub size={20}/></a>
-              <a href="https://www.linkedin.com/in/luis-david-senra-mirabal-483837296/" target = "_blank" className="p-4 rounded-xl bg-white/5 border border-white/10 text-white hover:text-amber-500 transition-all"><FaLinkedin size={20}/></a>
+              <a href="https://github.com/ldavidsm" target="_blank" className="p-4 rounded-xl bg-white/5 border border-white/10 text-white hover:text-amber-500 transition-all"><FaGithub size={20} /></a>
+              <a href="https://www.linkedin.com/in/luis-david-senra-mirabal-483837296/" target="_blank" className="p-4 rounded-xl bg-white/5 border border-white/10 text-white hover:text-amber-500 transition-all"><FaLinkedin size={20} /></a>
             </div>
           </div>
 
@@ -37,25 +40,25 @@ export default function Contact() {
             <form className="flex flex-col gap-6 relative z-10">
               <input
                 type="text"
-                placeholder="Nombre completo"
+                placeholder={t('contact.form.name_placeholder')}
                 className="bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-amber-500 transition-colors"
               />
               <input
                 type="email"
-                placeholder="Tu correo electrónico"
+                placeholder={t('contact.form.email_placeholder')}
                 className="bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-amber-500 transition-colors"
               />
               <textarea
-                placeholder="Cuéntame sobre tu proyecto..."
+                placeholder={t('contact.form.message_placeholder')}
                 rows={5}
                 className="bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-amber-500 transition-colors resize-none"
               />
-              <a 
-                href="mailto:luisdavidsenramirabal@gmail.com?subject=Contacto desde Portfolio&body=Hola Luis David,%0D%0A%0D%0AMe gustaría contactarte acerca de..."
+              <a
+                href={`mailto:luisdavidsenramirabal@gmail.com?subject=${t('contact.email_subject')}&body=${t('contact.email_body')}`}
                 className="bg-amber-500 text-black font-black py-4 px-8 rounded-2xl hover:bg-amber-400 transition-all uppercase tracking-widest text-sm text-center"
-                >
-              Enviar Email Directo
-            </a>
+              >
+                {t('contact.form.send_button')}
+              </a>
             </form>
           </div>
         </div>

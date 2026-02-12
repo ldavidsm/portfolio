@@ -1,29 +1,93 @@
 {
-"nav": {
-  "home": "Inicio",
-  "about": "Sobre mí",
-  "experience": "Experiencia",
-  "skills": "Habilidades",
-  "education": "Educación",
-  "contact": "Contacto",
-  "hero_title": "Luis Senra Mirabal",
-  "hero_subtitle": "Ingeniero de Software"
-},
-
-
-"skills": {
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "education": "Educación",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Luis Senra Mirabal",
+    "subtitle": "Web Developer & Database Specialist"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "bio_part1": "Soy <1>Luis Senra Mirabal</1>, Ingeniero en Ciencias Informáticas enfocado en el trabajo con lenguaje python en el análisis, manejo, visualización de datos y en el desarrollo web. Dominio del trabajo con tecnologías de última generación y fácil adaptación a diferentes entornos de trabajo, con una enorme pasión y dedicación por la profesión con ganas de afrontar nuevos retos y desafíos para seguir creciendo profesionalmente. Destaco por mi capacidad analítica, adaptabilidad y trabajo en equipo, fomentando la colaboración y el aprendizaje continuo. Mi objetivo es superar las expectativas en cada proyecto, aportando soluciones innovadoras que mantengan altos estándares de calidad y eficiencia en cada línea de código.",
+    "bio_part2": "Me apasiona transformar problemas complejos en sistemas escalables, siempre con un ojo puesto en la eficiencia del código y la integridad de los datos."
+  },
+  "education": {
+    "title": "Educación",
+    "items": [
+      {
+        "year": "2017 - 2022",
+        "degree": "Ingeniería en Ciencias Informaticas",
+        "institution": "Universidad de Ciencias Informaticas",
+        "description": "Durante mi formación universitaria, desarrollé una sólida base en ciencias de la computación, programación y desarrollo de software. La carrera me proporcionó conocimientos profundos en algoritmos, estructuras de datos, ingeniería de software y tecnologías web modernas."
+      },
+      {
+        "year": "2024 - 2025",
+        "degree": "Master en Diseño y Programacion Web FullStack",
+        "institution": "Escuela Mastermedia",
+        "description": "Formación intensiva en el ecosistema Web y diseño de APIs."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "year": "2022 - 2024",
+        "role": "Desarrollador Web y Especialista en Base de Datos",
+        "company": "Empresa Ejemplo",
+        "description": "Mantenimiento, optimizacion y administracion de las bases de datos del ecosistema DecidimOS. Implementacion de APIs y modulos para el desarrollo del mismo",
+        "tech": [
+          "Python",
+          "PostrgreSQL",
+          "MySQL",
+          "Grafana"
+        ]
+      },
+      {
+        "year": "2025",
+        "role": "Full Stack Developer",
+        "company": "HealthLearner",
+        "description": "Implementación de APIs REST, integración con bases de datos PostgreSQL y automatizaciones con ia.",
+        "tech": [
+          "Python",
+          "PostgreSQL",
+          "React",
+          "n8n"
+        ]
+      }
+    ]
+  },
+  "skills": {
     "title": "Habilidades",
     "subtitle": "Especialización Técnica",
+    "description": "Desarrollo soluciones web full-stack de alto rendimiento con FastAPI (Python) para backends escalables, PostgreSQL para gestión robusta de datos, y React en el frontend para interfaces dinámicas y reactivas.",
+    "quote": "Conecto lógica de negocio ágil con experiencias de usuario fluidas, desde la base de datos hasta la interfaz.",
+    "highlight": "Arquitecturas API-first, optimización de consultas en bases de datos relacionales, y aplicaciones React mantenibles y eficientes.",
     "expert": "Experto",
     "advanced": "Avanzado"
   },
-
-"contact": {
+  "contact": {
     "title": "Contacto",
     "subtitle": "¿Hablamos de tu próximo proyecto?",
-    "name": "Nombre completo",
-    "email": "Email",
-    "message": "Mensaje",
-    "send": "Enviar Mensaje"
+    "description": "Estoy disponible para nuevos retos y colaboraciones en el área de desarrollo y datos.",
+    "details": {
+      "email": "Email",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "mylocation": "Madrid, España"
+    },
+    "form": {
+      "name_placeholder": "Nombre completo",
+      "email_placeholder": "Tu correo electrónico",
+      "message_placeholder": "Cuéntame sobre tu proyecto...",
+      "send_button": "Enviar Email Directo"
+    },
+    "email_subject": "Contacto desde Portfolio",
+    "email_body": "Hola Luis David,\n\nMe gustaría contactarte acerca de..."
   }
 }

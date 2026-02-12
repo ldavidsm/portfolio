@@ -1,28 +1,93 @@
 {
-
-"nav":{  "home": "Home",
-  "about": "About",
-  "experience": "Experience",
-  "skills": "Skills",
-  "education": "Education",
-  "contact": "Contact",
-  "hero_title": "Luis Senra Mirabal",
-  "hero_subtitle": "Software Engineer"
-},
-
-"skills": {
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "education": "Education",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Luis Senra Mirabal",
+    "subtitle": "Web Developer & Database Specialist"
+  },
+  "about": {
+    "title": "About Me",
+    "bio_part1": "I am <1>Luis Senra Mirabal</1>, a Computer Science Engineer focused on working with Python in data analysis, management, visualization, and web development. I am proficient in working with cutting-edge technologies and adapt easily to different work environments, with huge passion and dedication for the profession, eager to face new challenges to continue growing professionally. I stand out for my analytical capacity, adaptability, and teamwork, fostering collaboration and continuous learning. My goal is to exceed expectations in every project, providing innovative solutions that maintain high standards of quality and efficiency in every line of code.",
+    "bio_part2": "I am passionate about transforming complex problems into scalable systems, always with an eye on code efficiency and data integrity."
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "year": "2017 - 2022",
+        "degree": "Computer Science Engineering",
+        "institution": "University of Computer Sciences",
+        "description": "During my university training, I developed a solid foundation in computer science, programming, and software development. The career provided me with deep knowledge in algorithms, data structures, software engineering, and modern web technologies."
+      },
+      {
+        "year": "2024 - 2025",
+        "degree": "Master in FullStack Web Design and Programming",
+        "institution": "Mastermedia School",
+        "description": "Intensive training in the Web ecosystem and API design."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "year": "2022 - 2024",
+        "role": "Web Developer and Database Specialist",
+        "company": "Example Company",
+        "description": "Maintenance, optimization, and administration of the DecidimOS ecosystem databases. Implementation of APIs and modules for its development.",
+        "tech": [
+          "Python",
+          "PostgreSQL",
+          "MySQL",
+          "Grafana"
+        ]
+      },
+      {
+        "year": "2025",
+        "role": "Full Stack Developer",
+        "company": "HealthLearner",
+        "description": "Implementation of REST APIs, integration with PostgreSQL databases, and AI automations.",
+        "tech": [
+          "Python",
+          "PostgreSQL",
+          "React",
+          "n8n"
+        ]
+      }
+    ]
+  },
+  "skills": {
     "title": "Skills",
     "subtitle": "Technical Expertise",
+    "description": "I develop high-performance full-stack web solutions with FastAPI (Python) for scalable backends, PostgreSQL for robust data management, and React on the frontend for dynamic and reactive interfaces.",
+    "quote": "I connect agile business logic with fluid user experiences, from the database to the interface.",
+    "highlight": "API-first architectures, relational database query optimization, and maintainable and efficient React applications.",
     "expert": "Expert",
     "advanced": "Advanced"
   },
-
- "contact": {
+  "contact": {
     "title": "Contact",
     "subtitle": "Let's talk about your next project",
-    "name": "Full Name",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send Message"
-  } 
-}  
+    "description": "I am available for new challenges and collaborations in the development and data area.",
+    "details": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "mylocation": "Madrid, Spain"
+    },
+    "form": {
+      "name_placeholder": "Full Name",
+      "email_placeholder": "Your Email",
+      "message_placeholder": "Tell me about your project...",
+      "send_button": "Send Direct Email"
+    },
+    "email_subject": "Contact from Portfolio",
+    "email_body": "Hi Luis David,\n\nI would like to contact you about..."
+  }
+}

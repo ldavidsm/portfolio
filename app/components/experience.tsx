@@ -1,26 +1,22 @@
+import { useTranslation } from "react-i18next";
+
+interface ExperienceItem {
+  year: string;
+  role: string;
+  company: string;
+  description: string;
+  tech: string[];
+}
+
 export default function Experience() {
-  const experiences = [
-    {
-      year: "2022 - 2024",
-      role: "Desarrollador Web y Especialista en Base de Datos",
-      company: "Empresa Ejemplo",
-      description: "Mantenimiento, optimizacion y administracion de las bases de datos del ecosistema DecidimOS. Implementacion de APIs y modulos para el desarrollo del mismo ",
-      tech: ["Python", "PostrgreSQL", "MySQL", "Grafana"]
-    },
-    {
-      year: "2021 - 2023",
-      role: "Full Stack Developer",
-      company: "Startup Ejemplo",
-      description: "Implementación de APIs REST, integración con bases de datos SQL Server y mantenimiento de sistemas.",
-      tech: ["Node.js", "SQL Server", "React"]
-    }
-  ];
+  const { t } = useTranslation();
+  const experiences = t("experience.items", { returnObjects: true }) as ExperienceItem[];
 
   return (
     <section id="experience" className="w-full bg-[#0a0a0a] py-20 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-black mb-12 uppercase tracking-tighter flex items-center gap-4">
-          <span className="text-amber-500">03.</span> Experiencia
+          <span className="text-amber-500">03.</span> {t('experience.title')}
         </h2>
 
         <div className="grid gap-6">
