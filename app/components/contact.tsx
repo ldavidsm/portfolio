@@ -67,7 +67,7 @@ export default function Contact() {
   );
 }
 
-// Sub-componente de ayuda para la info de contacto
+
 function ContactDetail({ icon, title, content }: { icon: any, title: string, content: string }) {
   return (
     <div className="flex items-center gap-4">
