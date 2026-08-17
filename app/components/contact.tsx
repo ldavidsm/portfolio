@@ -8,7 +8,7 @@ export default function Contact() {
     <section id="contact" className="w-full bg-[#0a0a0a] py-20 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-black mb-16 uppercase tracking-tighter flex items-center gap-4">
-          <span className="text-amber-500">04.</span> {t('contact.title')}
+          <span className="text-amber-500">05.</span> {t('contact.title')}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -54,7 +54,7 @@ export default function Contact() {
                 className="bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-amber-500 transition-colors resize-none"
               />
               <a
-                href={`mailto:luisdavidsenramirabal@gmail.com?subject=${t('contact.email_subject')}&body=${t('contact.email_body')}`}
+                href={`mailto:lsenramirabal@gmail.com?subject=${t('contact.email_subject')}&body=${t('contact.email_body')}`}
                 className="bg-amber-500 text-black font-black py-4 px-8 rounded-2xl hover:bg-amber-400 transition-all uppercase tracking-widest text-sm text-center"
               >
                 {t('contact.form.send_button')}

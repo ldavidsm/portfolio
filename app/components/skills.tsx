@@ -6,7 +6,7 @@ export default function Skills() {
   const skills = [
     { name: "PostgreSQL", level: 80, color: "#512bd4" },
     { name: "Python", level: 80, color: "#239120" },
-    { name: "FastApi", level: 85, color: "#4fc08d" },
+    { name: "FastAPI", level: 85, color: "#4fc08d" },
     { name: "PowerBi", level: 75, color: "#512bd4" },
     { name: "MySQL", level: 75, color: "#cc2927" },
     { name: "React", level: 70, color: "#0078d4" },
@@ -16,7 +16,7 @@ export default function Skills() {
     <section id="skills" className="w-full bg-[#0a0a0a] py-20 text-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-black mb-16 uppercase tracking-tighter flex items-center gap-4">
-          <span className="text-amber-500">05.</span> {t("skills.title")}
+          <span className="text-amber-500">04.</span> {t("skills.title")}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">

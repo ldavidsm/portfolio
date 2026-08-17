@@ -21,13 +21,13 @@
     "items": [
       {
         "year": "2017 - 2022",
-        "degree": "Ingeniería en Ciencias Informaticas",
-        "institution": "Universidad de Ciencias Informaticas",
+        "degree": "Ingeniería en Ciencias Informáticas",
+        "institution": "Universidad de Ciencias Informáticas",
         "description": "Durante mi formación universitaria, desarrollé una sólida base en ciencias de la computación, programación y desarrollo de software. La carrera me proporcionó conocimientos profundos en algoritmos, estructuras de datos, ingeniería de software y tecnologías web modernas."
       },
       {
         "year": "2024 - 2025",
-        "degree": "Master en Diseño y Programacion Web FullStack",
+        "degree": "Máster en Diseño y Programación Web FullStack",
         "institution": "Escuela Mastermedia",
         "description": "Formación intensiva en el ecosistema Web y diseño de APIs."
       }
@@ -39,11 +39,11 @@
       {
         "year": "2022 - 2024",
         "role": "Desarrollador Web y Especialista en Base de Datos",
-        "company": "Empresa Ejemplo",
-        "description": "Mantenimiento, optimizacion y administracion de las bases de datos del ecosistema DecidimOS. Implementacion de APIs y modulos para el desarrollo del mismo",
+        "company": "Proyecto DecidimOS — Administración Pública",
+        "description": "Mantenimiento, optimización y administración de las bases de datos del ecosistema DecidimOS. Implementación de APIs y módulos para el desarrollo del mismo.",
         "tech": [
           "Python",
-          "PostrgreSQL",
+          "PostgreSQL",
           "MySQL",
           "Grafana"
         ]
@@ -52,7 +52,7 @@
         "year": "2025",
         "role": "Full Stack Developer",
         "company": "HealthLearner",
-        "description": "Implementación de APIs REST, integración con bases de datos PostgreSQL y automatizaciones con ia.",
+        "description": "Implementación de APIs REST, integración con bases de datos PostgreSQL y automatizaciones con IA.",
         "tech": [
           "Python",
           "PostgreSQL",
